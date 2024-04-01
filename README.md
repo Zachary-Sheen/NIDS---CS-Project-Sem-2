@@ -8,7 +8,7 @@
 
 
 <h2>Goal and requirements</h2>
-<strong>For this project I had three goals: <hr> 1: Be able to analyze captured packets and dissect them into information I can use <hr> 2: Implement an algorithm that can determine if some activity is suspicious<hr> 3:Once being able to figure out if a packet is suspicious, alert and record the packet to the system(log and report all issues)</strong><br/>
+<strong>For this project I had three goals: <hr> 1: Be able to analyze captured packets and dissect them into information I can use <hr> 2: Implement an algorithm that can determine if some activity is suspicious<hr> 3:Once being able to figure out if a packet is suspicious, alert and record the packet to the system(log and report all issues)<hr>  My only non-goal was to expand my knowledge of the world of cybersecurity using Python.<hr>  Link to design doc - https://docs.google.com/document/d/1so951MYNsgI0iNlArCSiIPoMQzJsEj7ixOSP7xd7ArQ/edit?usp=sharing<hr></strong><br/>
  Summarize your goals, non-goals, and project requirements from your design doc. Make sure to link your design doc here as well.
  
  <h3>Sprint Goal</h3>
