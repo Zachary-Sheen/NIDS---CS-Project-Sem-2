@@ -1,14 +1,14 @@
-<div align="center">(optional) Project photo</div>
-<h1 align="center">Project Name</h1>
-<p align="center"><strong>One-line description</strong>
+<div align="center"></div>
+<h1 align="center">Network Intrusion Detection System</h1>
+<p align="center"><strong>I made a working NIDS with Scapy and Python using AbuseIPDB as an API</strong>
 <br/>
 
 <h2>About</h2>
-<strong>FILL THIS IN</strong><br/>
-Answer these questions: What is your project? Why'd you build it?
+<strong>My project is a Network Intrusion Detection System (NIDS) that takes in packets in transit and reads their contents to determine if they are malicious or not.  I built this project because I didn't want to just make another game or website, but wanted to actually build something that uses contents of what I want to do in the future.  I have gotten very interested in cybersecurity, and I loved doing this project to learn more about it.</strong><br/>
+
 
 <h2>Goal and requirements</h2>
-<strong>FILL THIS IN</strong><br/>
+<strong>For this project I had three goals: <hr> 1: Be able to analyze captured packets and dissect them into information I can use <hr> 2: Implement an algorithm that can determine if some activity is suspicious<hr> 3:Once being able to figure out if a packet is suspicious, alert and record the packet to the system(log and report all issues)</strong><br/>
  Summarize your goals, non-goals, and project requirements from your design doc. Make sure to link your design doc here as well.
  
  <h3>Sprint Goal</h3>
