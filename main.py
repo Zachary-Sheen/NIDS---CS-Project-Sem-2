@@ -6,6 +6,7 @@ import re
 # from PyQt5 import QtCore, QtGui, QtWidgets
 import threading
 from PySide6 import QtCore, QtWidgets, QtGui
+import requests
 
 
 # cd Desktop/NIDS 
@@ -80,16 +81,34 @@ def runCode():
             "malicious_browser_extension": re.compile(r'chrome-extension://malicious|moz-extension://malicious'),
             "reverse_shell_attempt": re.compile(r'reverse shell|nc -e /bin/sh')
         }
+        headers = {
+        'Key': api_key,
+        'Accept': 'application/json'
+        }
 #endregion Regex Threats
         def packet_handler(packet):
             print(packet.summary)
 
-        def is_malicious(packet_payload, threat_signatures):
-            packet_payload_str = packet_payload.decode('utf-8')  # Decode bytes to string
+        def is_malicious(packet_payload, threat_signatures,sourceip):
+            packet_payload_str = packet_payload.decode('utf-8')  
+            key = "5702b64cdeddfd1d883861dd68b4bdc19342294d213253d1eb66946541c40abdc2b6023b5360db95"
+            url = f'https://api.abuseipdb.com/api/v2/check?ipAddress={sourceip}&maxAgeInDays=90'
             for signature_name, signature_regex in threat_signatures.items():
                 if signature_regex.search(packet_payload_str):
                     print(f"Packet is malicious. Detected signature: {signature_name}\n")
                     return True
+                try:
+                    response = requests.get(url, headers=headers)
+                    if response.status_code == 200:
+                        data = response.json()
+                        if data['data']['abuseConfidenceScore'] >= 50:
+                            print(f"The IP address {ip_address} is malicious with a confidence score of {data['data']['abuseConfidenceScore']}")
+                        else:
+                            print(f"The IP address {ip_address} is not malicious.")
+                    else:
+                        print(f"Error: {response.status_code} - {response.text}")
+                except Exception as e:
+                    print(f"An error occurred: {str(e)}")
             
             print("Packet is not malicious.")
             return False
@@ -108,8 +127,9 @@ def runCode():
 
 
                         if Raw in packet:
-                            is_malicious(packet[Raw].load,threat_signatures)
+                            is_malicious(packet[Raw].load,threat_signatures,source_ip)
                             print(f"Packet Payload - {packet[Raw].load}\n-------------------------------------------------------")
+                        
             except IndexError:
                 # Handle case where IP layer is not present
                 return None, None, None, None
