@@ -9,7 +9,7 @@
 
 <h2>Goal and requirements</h2>
 <strong>For this project I had three goals: <hr> 1: Be able to analyze captured packets and dissect them into information I can use <hr> 2: Implement an algorithm that can determine if some activity is suspicious<hr> 3:Once being able to figure out if a packet is suspicious, alert and record the packet to the system(log and report all issues)<hr>  My only non-goal was to expand my knowledge of the world of cybersecurity using Python.<hr>  Link to design doc - https://docs.google.com/document/d/1so951MYNsgI0iNlArCSiIPoMQzJsEj7ixOSP7xd7ArQ/edit?usp=sharing</strong><br/>
- Summarize your goals, non-goals, and project requirements from your design doc. Make sure to link your design doc here as well.
+ 
  
  <h3>Sprint Goal</h3>
 <strong>For this sprint, I am going to try to integrate a malicious IP database that I can reference with each IP address I check.  I am going to use AbuseIPDB, which is a free database that contains reports of malicious IP adresses and integrate it into my code.</strong><br/>
@@ -19,7 +19,7 @@
 So... what did you learn? (start this, but **come back to it at the end of the sprint**)
 
 <h2>Running your project</h2>
-<strong>FILL THIS IN</strong><br/>
+<strong>To run my project, you open your terminal and go to the directory of the project and run the python script using python3.</strong><br/>
 How would I, or anyone who comes across this project, run this project? Make sure to include all the steps.
 
 <h2>Misc.</h2>
