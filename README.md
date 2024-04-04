@@ -15,12 +15,11 @@
 <strong>For this sprint, I am going to try to integrate a malicious IP database that I can reference with each IP address I check.  I am going to use AbuseIPDB, which is a free database that contains reports of malicious IP adresses and integrate it into my code.</strong><br/>
 
 <h2>Key learnings</h2>
-<strong>FILL THIS IN</strong><br/>
-So... what did you learn? (start this, but **come back to it at the end of the sprint**)
+<strong>This project, I learned a lot about networks and how to use python to access and break down informations that travel through networks.  Also, I finally learned how to integrate an API into my code, which was a lot of fun.  If I had more time to do this, I would've liked to make something (website or gui) that allows the user to check specific packets or just access a Wi-Fi and the packets coming into it.</strong><br/>
 
 <h2>Running your project</h2>
-<strong>To run my project, you open your terminal and go to the directory of the project and run the python script using python3.</strong><br/>
-How would I, or anyone who comes across this project, run this project? Make sure to include all the steps.
+<strong>To run my project, you open your terminal and go to the directory of the project and run the python script using python3.  Doing this would automatically tap into your Wi-FI and analyze packets coming in.</strong><br/>
+
 
 <h2>Misc.</h2>
 Me at the <a href = "https://t4.ftcdn.net/jpg/01/15/20/75/360_F_115207580_US2etunH78I7iMYHOoNVvxQTCIdoPdRj.jpg">start</a>, me at the <a href = "https://thumbs.dreamstime.com/z/dead-emoji-emoticon-lying-his-back-open-mouth-tongue-out-cross-eyes-153823115.jpg">end</a>.
