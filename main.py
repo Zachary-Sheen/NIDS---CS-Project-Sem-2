@@ -163,9 +163,9 @@ def test_attack_packets():
             print(f"-------------------------------------------------------\n\tTesting {attack_type} packet {i}:")
             parse_packet(attack_packet)
             
-test_attack_packets()
+# test_attack_packets()
 
-            # sniff(iface='eth0', prn=parse_packet, count=10)
+sniff(iface='eth0', prn=parse_packet, count=10) #set count to 0 to analyze indefinitely
   
 
 
