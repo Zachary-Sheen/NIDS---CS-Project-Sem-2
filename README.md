@@ -23,7 +23,7 @@ So... what did you learn? (start this, but **come back to it at the end of the s
 How would I, or anyone who comes across this project, run this project? Make sure to include all the steps.
 
 <h2>Misc.</h2>
-Feel free to add anything else you want here :)
+Me at the <a href = "https://t4.ftcdn.net/jpg/01/15/20/75/360_F_115207580_US2etunH78I7iMYHOoNVvxQTCIdoPdRj.jpg">start</a>, me at the <a href = "https://thumbs.dreamstime.com/z/dead-emoji-emoticon-lying-his-back-open-mouth-tongue-out-cross-eyes-153823115.jpg">end</a>.
 
 <h2>Copyright</h2>
 This project is licensed under the terms of the MIT license and protected by Udacity Honor Code and Community Code of Conduct. See <a href="LICENSE.md">license</a> and <a href="LICENSE.DISCLAIMER.md">disclaimer</a>.
